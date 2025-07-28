@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+body {
+  background-color: #f4efb6;
+}
+
+h1 {
+  color: #0bd;
+}
+
+p {
+  font-size: 20px;
+}
+
+div p {
+  color: red;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: serif;
+}
+
+h2 {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+
+p {
+  font-family: "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+}
+
+p {
+  font-family: fantasy;
+}
+
+p {
+  font-weight: bold;
+}
+
+p {
+  line-height: 2.5;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  color: navy;
+}
+
+p {
+  color: rgba(10, 130, 165, 0.5);
+}
+
+body {
+  background-color: #fee;
+}
+
+h1 {
+  background-color: #faa;
+}
+
+body {
+  background-image: url(../images/japansakura.png);
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: center top;
+  height: 100vh;
+}
+
+/*12余白を調整しよう*/
+h3 {
+  background: #0bd;
+  margin: 30px 100px;
+  padding: 40px;
+}
+
+/*重複上書きされているところがある*/
+/*13線を引こう*/
+article {
+  border-width: thick;
+  border-style: solid dotted dashed double;
+}
+
+div p {
+  border-width: 1px 4px 8px 12px;
+  border-style: solid;
+  border-color: tan #0bd tomato #000;
+}
+
+h2 {
+  border-bottom: 2px solid tomato;
+}
+
+/*14リストを装飾*/
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/*15クラスとID*/
+.blue {
+  color: #5c73b7;
+}
+
+#orange {
+  color: #fa2;
+}
+
+/*16レイアウトを組もう*/
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vh;
+}
+
+.item {
+  background: #0bd;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*17CSSグリットでタイル型に並べよう*/
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 200px 200px;
+}
+
+.item2 {
+  background: #fa2;
+  color: #fff;
+  padding: 10px;
+}

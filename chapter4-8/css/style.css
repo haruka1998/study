@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+/*5ヘッダーを作ろう*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: "#432";
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*10追加部分 コンテンツの最大幅表示設定*/
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+/*----------------------------------*/
+.align-center {
+    text-align: center;
+}
+
+.font-english {
+    font-family: "Philosopher", sans-serif;
+    font-weight: normal;
+}
+
+.page-header {
+    padding-top: .5ram;
+}
+
+.logo {
+    width: 210px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+/*６キャッチコピーとカバー画像を作ろう*/
+.page-title,
+.heading-large,
+.heading-medium
+
+/*5−５カンマからheadingーmediumを追加*/
+    {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+
+/*7追加部分 ボタンを設置・8ボタンにアニメーションtransitionプロパティ*/
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #0090aa;
+    /*12ボタンアニメーションカスタマイズ*/
+    scale: 1.2;
+    rotate: -5deg;
+    translate: 10px;
+}
+
+/* 7-3地図を表示見栄えを整える */
+iframe {
+    width: 100%;
+}
+
+/*-----------------------------*/
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+
+/*5-3cssで装飾しよう*/
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+
+/*-----------------------------*/
+
+.cover-home {
+    background-image: url(../images/cover-home-s.webp);
+}
+
+/*7コンテンツ部分を作ろう*/
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+
+.about p {
+    margin-bottom: 3rem;
+}
+
+/*5-3cssで装飾しよう NEWS*/
+.cover-news {
+    background-image: url(../images/cover-news-s.webp);
+}
+
+/*-----------------------------*/
+/*5-4タイトルと日付を装飾しよう~*/
+.post {
+    margin-bottom: 3rem;
+}
+
+.post-title {
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+}
+
+.post-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.post-cat {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.post-cat a {
+    color: #432;
+    background-color: #faf7f0;
+    border-radius: 8px;
+    font-size: .875rem;
+    padding: .5rem .75rem;
+}
+
+.post-cat a:hover {
+    background-color: c9c2bc;
+}
+
+.post-date {
+    font-size: .875rem;
+}
+
+.post-thumbnail {
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.post p {
+    margin-bottom: 1.5rem;
+    line-height: 2;
+}
+
+/*-----------------------------*/
+/*5-5サイドバーを作ろう*/
+.side-menu {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.side-menu li {
+    border-bottom: 1px solid #c9c2bc;
+}
+
+.side-menu a {
+    color: #432;
+    display: block;
+    padding: 1rem;
+}
+
+.side-menu a:hover {
+    color: #0bd;
+}
+
+/*6-3css装飾p257・6−４タイル型レイアウト*/
+.cover-menu {
+    background-image: url(../images/cover-menu-s.webp)
+}
+
+.grid {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.item p {
+    font-size: .875rem;
+}
+
+/* 7-2ページ全体の見出しを制作しよう */
+.cover-contact {
+    background-image: url(../images/cover-contact-s.webp);
+}
+
+/* 7-3地図表示 */
+.location {
+    margin-bottom: 3.5rem;
+}
+
+.location-info {
+    margin-bottom: 2rem;
+}
+
+.location-info info {
+    padding: 0;
+}
+
+/* 7-4メールアドレス宛のリンクを用意 */
+.email {
+    max-width: 916px;
+    background-color: #faf7f0;
+    border-radius: 48px;
+    padding: 1.5rem 2.5rem 2.5rem;
+    margin: 0 auto 2rem;
+}
+
+.email p {
+    margin: 1rem 0 2rem;
+}
+
+/* 7-5SNSレイアウト */
+.sns-item {
+    margin-bottom: 2rem;
+}
+
+.sns-item .heading-medium {
+    margin-bottom: .5rem;
+}
+
+.sns-youtube {
+    aspect-ratio: 16/9;
+}
+
+.sns-youtube iframe {
+    height: 100%;
+}
+
+/*--------------------------*/
+.page-hooter {
+    background-image: url(../images/footer-s.webp);
+    background-size: cover;
+    background-position: center;
+    padding-top: 12rem;
+}
+
+/*9フッダー部分を作ろう*/
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.info td {
+    padding: 1rem 0;
+}
+
+.copyright {
+    background-color: #432;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+/*4-10レスポンシブに対応させよう デスクトップ版*/
+@media(min-width: 800px) {
+    .page-title {
+        font-size: 5rem;
+    }
+
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    /*5−６レスポンシブに対応させよう 記事タイトルの文字サイズ調整*/
+    .post-title {
+        font-size: 2rem;
+    }
+
+    /*ーーーーーーーーーーーーーーーー*/
+
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    /*5-6背景画像と余白を調整*/
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+
+    /*ーーーーーーーーーーーーーーーー*/
+    .cover-home {
+        background-image: url(../images/cover-home-l.webp);
+    }
+
+    .about {
+        margin: 4rem auto 0;
+    }
+
+    /*5-6背景画像設定 コンテンツを横並びにしよう*/
+    .cover-news {
+        background-image: url(../images/cover-news-l.webp);
+    }
+
+    .news-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post {
+        width: 60%;
+        order: 2;
+        /*5−７表示するカラムの順番変更*/
+    }
+
+    .sidebar {
+        width: 22%;
+        order: 3;
+    }
+
+    .ad {
+        order: 1;
+    }
+
+    .sidebar .heading-medium {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    /*6-5れ市本支部に対応MENU*/
+    .cover-menu {
+        background-image: url(../images/cover-menu-l.webp);
+    }
+
+    .grid {
+        gap: 3rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item img {
+        margin-bottom: 5rem;
+    }
+
+    .item p {
+        font-size: 1rem;
+    }
+
+    /* 7-8レスポンシブに対応させよう */
+    .cover-contact {
+        background-image: url(../images/cover-contact-l.webp);
+    }
+
+    .location {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .location-info {
+        width: 32%;
+    }
+
+    .location-info .info th {
+        padding-left: 2rem;
+    }
+
+    .location-map {
+        width: 64%;
+    }
+
+    .email {
+        margin-bottom: 4rem;
+    }
+
+    .sns {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
+    .sns-item {
+        flex: 1;
+    }
+
+    /*6-6タイル型カスタマイズ*/
+    .item-big {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .item-big img {
+        height: 87.5%;
+        width: 100%;
+    }
+
+    /*ーーーーーーーーーーーーーーーー*/
+    .page-hooter {
+        background-image: url(../images/footer-l.webp);
+        padding-top: 12rem;
+    }
+
+    .info th {
+        padding-left: 2.5rem;
+    }
+}

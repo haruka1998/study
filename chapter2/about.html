@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="猫の好きなもの、日々の生活をご紹介" />
+  <title>猫の実態</title>
+  <link rel="stylesheet" href="../common/reset.css" />
+  <link rel="stylesheet" href="../common/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="../common/script.js"></script>
+  <script src="./about.js"></script>
+</head>
+
+<body>
+  <h1>１〜５猫の一日</h1>
+  <h2>猫の趣味は？</h2>
+  <h3>お昼寝大好き！</h3>
+  <h3>爪研ぎは欠かせません</h3>
+  <h3>気づけばやってる毛づくろい</h3>
+  <p>ひたすら寝ています。</p>
+  <h2>７画像を挿入する</h2>
+  <img src="../images/sakura.jpg" alt="美しい桜" />
+  <h2>８リンクを貼る</h2>
+  <a href="https://google.co.jp">Google</a>で検索
+  <a href="https://google.co.jp">
+    <img src="../images/sakura.jpg" alt="美しい桜" /></a>
+  <a href="http://google.co.jp" target="_blank">Google</a>
+  <a href="mailto:info@example.com">お問い合わせ</a>
+  <h2>9リストを表示する</h2>
+  <ul>
+    <li>卵（３個）</li>
+    <li>しょうゆ（大さじ１）</li>
+    <li>みりん（大さじ１）</li>
+    <li>塩（少々）</li>
+  </ul>
+  <ol>
+    <li>卵を割りほぐし、調味料を加える</li>
+    <li>卵焼き器に卵液を１/４量を入れて広げる</li>
+    <li>半熟状になったら箸で手前に巻き、奥に移動させる</li>
+    <li>これを繰り返し、最後まで焼けたら完成</li>
+  </ol>
+  <h2>10表を作ろう</h2>
+  <table border="1">
+    <tr>
+      <th>プラン名</th>
+      <th>料金</th>
+    </tr>
+    <tr>
+      <td>わくわくプラン</td>
+      <td>月額2,900円</td>
+    </tr>
+    <tr>
+      <td>にこにこプラン</td>
+      <td>月額1,900円</td>
+    </tr>
+  </table>
+  <table border="1">
+    <tr>
+      <th colspan="2">セル１＋２</th>
+    </tr>
+    <tr>
+      <td rowspan="2">セル３＋５</td>
+      <td>セル４</td>
+    </tr>
+    <tr>
+      <td>セル６</td>
+    </tr>
+  </table>
+  <!--製作者のメモ書き可能-->
+  <h2>11フォームを作ろう</h2>
+  <form action="example.php" method="post" name="contact-form">
+    ここにフォームの部品が入ります
+    <p>
+      名前：<input type="text" /><br />名前：<input type="text" placeholder="名字 名前" />
+    </p>
+    <p>メールアドレス：<input type="email" /></p>
+    <p>電話番号：<input type="tel" /></p>
+    <p>
+      性別： <input type="radio" name="gender" value="男" />男
+      <input type="radio" name="gender" value="女" />女
+      <input type="radio" name="gender" value="その他" />その他
+    </p>
+    <p>
+      <input type="checkbox" name="color" value="赤" checked />赤
+      <input type="checkbox" name="color" value="青" />青
+      <input type="checkbox" name="color" value="黄" />黄
+      <input type="checkbox" name="color" value="緑" />緑
+    </p>
+    <p>
+      <input type="submit" value="送信する" /><br /><input type="image" src="../images/sakura.jpg" alt="送信する" />
+    </p>
+    <p>
+      血液型
+      <select name="bloodtype">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+        <option value="AB">AB</option>
+        <option value="不明" selected>不明</option>
+      </select>
+    </p>
+    <p><textarea name="message" placeholder="メッセージを入力"></textarea></p>
+  </form>
+  <h2>12より使いやすいフォームにしよう</h2>
+  <form action="example.php" method="post" name="contact-form">
+    <input type="checkbox" name="travel" value="日本国内" id="japan" />
+    <label for="japan">日本国内</label>
+    <input type="checkbox" name="travel" value="ヨーロッパ" id="europe" />
+    <label for="europe">ヨーロッパ</label>
+    <input type="checkbox" name="travel" value="東南アジア" id="asia" />
+    <label for="asia">東南アジア</label>
+  </form>
+  <h2>13グループ分けをしよう</h2>
+  <!--ヘッダーは本来上部にある-->
+  <header>
+    <h1>ページタイトル</h1>
+    <nav>
+      <ul>
+        <li><a href="#">サービス紹介</a></li>
+        <li><a href="#">料金</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p>このWebサイトはweb業界の最新情報をお届けしています。</p>
+  </header>
+  <article>
+    <h2>記事タイトル</h2>
+    <p>最新のスマートフォン情報！新機種が発表されましたね。</p>
+  </article>
+  <section>
+    <h2>その他おすすめ記事</h2>
+    <ul>
+      <li><a href="#">スマートウォッチって使える？使えない？</a></li>
+      <li><a href="#">ランニングにはこのガジェットがおすすめ！</a></li>
+    </ul>
+  </section>
+  <main>
+    <article>
+      <h2>記事タイトル</h2>
+      <p>最新のスマートフォン情報！新機種が発表されましたね。</p>
+    </article>
+    <section>
+      <h2>その他おすすめ記事</h2>
+      <ul>
+        <li><a href="#">スマートウォッチって使える？使えない？</a></li>
+        <li><a href="#">ランニングにはこのガジェットがおすすめ！</a></li>
+      </ul>
+    </section>
+  </main>
+  <aside>
+    <h3>中の人ってこんな人</h3>
+    <p>このWebサイトで情報を発信している者です。よろしくお願いします。</p>
+  </aside>
+  <footer>
+    <ul>
+      <li><a href="#">FaceBook</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+    <p>Copyright 2019</p>
+    <!--本来は一番下の部分フッター-->
+  </footer>
+  <div>
+    <img src="../images/japansakura.png" alt="スマートフォン画像" />
+    <p>画面を正面から見た様子</p>
+  </div>
+  <p><a href="../index.html">Topへ戻る</a></p>
+</body>
+
+</html>
